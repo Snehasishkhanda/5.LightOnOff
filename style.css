@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+#video1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:1;
+    z-index: 1;
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#video2{
+    position: absolute;
+    top: 0;
+    margin-left:-1920px;
+    
+}
+.dragable{
+    height: 40px;
+    width: 250px;
+    background-color:transparent;
+    position: absolute;
+    z-index: 10;
+    top: 90%;
+    right: 10%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid white;
+    /* transform: translate(-50%,0); */
+    
+}
+.dragable h1{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.dr1{
+    height: 40px;
+    width: 40px;
+    background-color:transparent;
+    position: relative;
+    border-radius: 50%;
+    border: 2px dotted white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.or{
+    height: 15px;
+    width: 15px;
+    background-color: orangered;
+    border-radius: 50%;
+    position: absolute;
+}
+.dr2{
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    background-color: rgb(15, 0, 128);
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+}
